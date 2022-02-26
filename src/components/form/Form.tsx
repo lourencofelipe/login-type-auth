@@ -10,9 +10,10 @@ const FormStyled = styled.form`
 `
 type FormProps = {
     onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
-    children:  JSX.Element | JSX.Element[];
+    children: JSX.Element | JSX.Element[];
+    style: React.CSSProperties;
 }
 
-export const Form = ({ onSubmit, children }: FormProps) => (
-    <FormStyled onSubmit={onSubmit}>{ children }</FormStyled>
+export const Form = ({ onSubmit, children, style }: FormProps) => (
+    <FormStyled onSubmit={onSubmit} style={style}>{ children }</FormStyled>
 )

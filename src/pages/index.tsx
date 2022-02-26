@@ -10,15 +10,22 @@ import Head from 'next/head'
 
 const InputButton = styled(Input)`
   background-color: #1e90ff;
-  width: 100%;
+  margin-top: 3rem;
+  width: 100%; 
+  padding: 1.3rem;
+  font-size: 100%;
+  font-weight: 500;
+  cursor: pointer;
 `;
 
 const InputLabel = styled(Label)`
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-size: 16px;
+  font-size: 19px;
+  font-family: Roboto;
   font-weight: 400;
-  color: black;
+  line-height: 29px;
+  color: #585858;
 `
 
 const Home: NextPage = () => {
@@ -38,13 +45,12 @@ const Home: NextPage = () => {
       <Main>
         <Label>Welcome back!</Label>
         <Card>
-          <Form onSubmit={submitForm}>
+          <Form onSubmit={submitForm} style={{width: '25vw'}}>
             <InputLabel>Email</InputLabel>
             <Input placeholder="Email address" />
             <InputLabel>Password</InputLabel>
-            <Input placeholder="Password" />
-            <InputButton
-              type="submit"/>
+            <Input placeholder="Password" type="password" />
+            <InputButton type="submit"></InputButton>
           </Form>
         </Card>
       </Main>
