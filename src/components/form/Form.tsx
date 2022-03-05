@@ -7,11 +7,15 @@ const FormStyled = styled.form`
     justify-content: center;
     align-items: start;
     flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+        width: 25vw;
+    }
 `
 type FormProps = {
     onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
     children: JSX.Element | JSX.Element[];
-    style: React.CSSProperties;
+    style?: React.CSSProperties;
 }
 
 export const Form = ({ onSubmit, children, style }: FormProps) => (

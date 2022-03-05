@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       <Main>
         <Label>Welcome back!</Label>
         <Card>
-          <Form onSubmit={submitForm} style={{width: '25vw'}}>
+          <Form onSubmit={submitForm}>
             <InputLabel>Email</InputLabel>
             <Input placeholder="Email address" />
             <InputLabel>Password</InputLabel>
