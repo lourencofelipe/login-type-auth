@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 
 import styles from '../styles/Home.module.css'
 
-import { Main, Card, Label, Input, Form } from '@Components/index'
+import { Main, Card, Label, Input, Form, Button } from '@Components/index'
 
 import styled from 'styled-components'
 
